@@ -69,8 +69,8 @@ final class Uuid
 
         // Block 5
         $v = \hexdec($blocks[4]);
-        $arr[10] = ($v / 0x10000000000) & 0xFF;
-        $arr[11] = ($v / 0x100000000) & 0xFF;
+        $arr[10] = (intval($v / 0x10000000000)) & 0xFF;
+        $arr[11] = (intval($v / 0x100000000)) & 0xFF;
         $arr[12] = ($v >> 24) & 0xFF;
         $arr[13] = ($v >> 16) & 0xFF;
         $arr[14] = ($v >> 8) & 0xFF;
