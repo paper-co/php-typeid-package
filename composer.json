@@ -1,5 +1,5 @@
 {
-	"name": "bombenprodukt/typeid",
+	"name": "paper-co/typeid",
 	"description": "A package to easily make use of TypeID with PHP.",
 	"license": "MIT",
 	"keywords": [
@@ -29,6 +29,9 @@
 		"phpstan/phpstan-phpunit": "^1.0",
 		"phpstan/phpstan-strict-rules": "^1.5",
 		"symfony/yaml": "^6.3"
+	},
+	"replace": {
+		"bombenprodukt/typeid": "self.version"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
